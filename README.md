@@ -1,0 +1,1 @@
+Permission map for KitKat 4.4.2_r1 scanned by [PScout](http://pscout.csl.toronto.edu/)

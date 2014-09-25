@@ -1,0 +1,99 @@
+Permission:android.permission.WRITE_CONTACTS
+8 Callers:
+<android.provider.Contacts$ContactMethods: void addPostalLocation(android.content.Context,long,double,double)>
+<android.provider.ContactsContract$Contacts: void markAsContacted(android.content.ContentResolver,long)>
+<android.provider.Contacts$Settings: void setSetting(android.content.ContentResolver,java.lang.String,java.lang.String,java.lang.String)>
+<android.provider.Contacts$People: android.net.Uri addToGroup(android.content.ContentResolver,long,long)>
+<android.provider.ContactsContract$Directory: void notifyDirectoryChange(android.content.ContentResolver)>
+<android.provider.Contacts$People: void markAsContacted(android.content.ContentResolver,long)>
+<android.provider.ContactsContract$Contacts: android.net.Uri getLookupUri(long,java.lang.String)>
+<android.provider.Contacts$People: android.net.Uri createPersonInMyContactsGroup(android.content.ContentResolver,android.content.ContentValues)>
+Permission:android.permission.CAMERA
+2 Callers:
+<android.media.MediaRecorder: void setVideoSource(int)>
+<android.hardware.Camera: android.hardware.Camera open()>
+Permission:android.permission.MODIFY_AUDIO_SETTINGS
+5 Callers:
+<android.media.AudioManager: void setParameter(java.lang.String,java.lang.String)>
+<android.media.AudioManager: void setMicrophoneMute(boolean)>
+<android.media.AudioManager: boolean isWiredHeadsetOn()>
+<android.media.AudioManager: void setParameters(java.lang.String)>
+<android.media.AudioManager: boolean isBluetoothA2dpOn()>
+Permission:com.android.browser.permission.WRITE_HISTORY_BOOKMARKS
+5 Callers:
+<android.provider.Browser: void updateVisitedHistory(android.content.ContentResolver,java.lang.String,boolean)>
+<android.provider.Browser: void addSearchUrl(android.content.ContentResolver,java.lang.String)>
+<android.provider.Browser: void deleteFromHistory(android.content.ContentResolver,java.lang.String)>
+<android.provider.Browser: void clearSearches(android.content.ContentResolver)>
+<android.provider.Browser: void truncateHistory(android.content.ContentResolver)>
+Permission:android.permission.WRITE_CALENDAR
+1 Callers:
+<android.provider.CalendarContract$CalendarAlerts: android.net.Uri insert(android.content.ContentResolver,long,long,long,long,int)>
+Permission:android.permission.READ_CALENDAR
+5 Callers:
+<android.provider.CalendarContract$Instances: android.database.Cursor query(android.content.ContentResolver,java.lang.String[],long,long)>
+<android.provider.CalendarContract$EventDays: android.database.Cursor query(android.content.ContentResolver,int,int,java.lang.String[])>
+<android.provider.CalendarContract$Instances: android.database.Cursor query(android.content.ContentResolver,java.lang.String[],long,long,java.lang.String)>
+<android.provider.CalendarContract$Reminders: android.database.Cursor query(android.content.ContentResolver,long,java.lang.String[])>
+<android.provider.CalendarContract$Attendees: android.database.Cursor query(android.content.ContentResolver,long,java.lang.String[])>
+Permission:com.android.browser.permission.READ_HISTORY_BOOKMARKS
+5 Callers:
+<android.provider.Browser: java.lang.String[] getVisitedHistory(android.content.ContentResolver)>
+<android.provider.Browser: boolean canClearHistory(android.content.ContentResolver)>
+<android.provider.Browser: android.database.Cursor getAllVisitedUrls(android.content.ContentResolver)>
+<android.provider.Browser: android.database.Cursor getAllBookmarks(android.content.ContentResolver)>
+<android.provider.Browser: void truncateHistory(android.content.ContentResolver)>
+Permission:android.permission.WRITE_USER_DICTIONARY
+1 Callers:
+<android.provider.UserDictionary$Words: void addWord(android.content.Context,java.lang.String,int,java.lang.String,java.util.Locale)>
+Permission:android.permission.INTERNET
+18 Callers:
+<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>
+<java.net.URL: java.net.URLConnection openConnection()>
+<java.net.ServerSocket: void <init>(int)>
+<java.net.HttpURLConnection: void <init>(int)>
+<java.net.ServerSocket: void bind(java.net.SocketAddress)>
+<android.app.DownloadManager: android.net.Uri getUriForDownloadedFile(long)>
+<java.net.URLConnection: void connect()>
+<java.net.MulticastSocket: void <init>(int)>
+<java.net.URL: java.lang.Object getContent()>
+<android.app.DownloadManager: long addCompletedDownload(java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String,long,boolean,boolean)>
+<java.net.URLConnection: java.io.InputStream getInputStream()>
+<java.net.NetworkInterface: void <init>(int)>
+<java.net.URL: java.io.InputStream openStream()>
+<java.net.Socket: void <init>(int)>
+<java.net.HttpURLConnection: void connect()>
+<android.app.DownloadManager: long enqueue(android.app.DownloadManager$Request)>
+<java.net.DatagramSocket: void <init>(int)>
+<org.apache.http.impl.client.DefaultHttpClient: void <init>(int)>
+Permission:android.permission.READ_CALL_LOG
+1 Callers:
+<android.provider.CallLog$Calls: java.lang.String getLastOutgoingCall(android.content.Context)>
+Permission:com.android.voicemail.permission.ADD_VOICEMAIL
+2 Callers:
+<android.provider.VoicemailContract$Status: android.net.Uri buildSourceUri(java.lang.String)>
+<android.provider.VoicemailContract$Voicemails: android.net.Uri buildSourceUri(java.lang.String)>
+Permission:android.permission.WRITE_SETTINGS
+3 Callers:
+<android.provider.Settings$System: android.net.Uri getUriFor(java.lang.String)>
+<android.provider.Settings$Secure: android.net.Uri getUriFor(java.lang.String)>
+<android.provider.Settings$Global: android.net.Uri getUriFor(java.lang.String)>
+Permission:android.permission.READ_CONTACTS
+7 Callers:
+<android.widget.QuickContactBadge: void assignContactFromPhone(java.lang.String,boolean,android.os.Bundle)>
+<android.widget.QuickContactBadge: void onClick(android.view.View)>
+<android.provider.Contacts$People: android.database.Cursor queryGroups(android.content.ContentResolver,long)>
+<android.provider.ContactsContract$Contacts: android.net.Uri getLookupUri(long,java.lang.String)>
+<android.provider.Contacts$People: android.net.Uri addToGroup(android.content.ContentResolver,long,java.lang.String)>
+<android.widget.QuickContactBadge: void assignContactFromEmail(java.lang.String,boolean,android.os.Bundle)>
+<android.provider.Contacts$Settings: java.lang.String getSetting(android.content.ContentResolver,java.lang.String,java.lang.String)>
+Permission:android.permission.READ_SMS
+4 Callers:
+<android.provider.Telephony$Sms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[],java.lang.String,java.lang.String)>
+<android.provider.Telephony$Sms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[])>
+<android.provider.Telephony$Mms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[])>
+<android.provider.Telephony$Mms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[],java.lang.String,java.lang.String)>
+Permission:android.permission.RECORD_AUDIO
+2 Callers:
+<android.media.MediaRecorder: void setAudioSource(int)>
+<android.media.AudioRecord: void <init>(int,int,int,int,int)>
